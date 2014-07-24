@@ -25,7 +25,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
-#import "UIImageView+UIActivityIndicatorForSDWebImage.h"
+#import <UIActivityIndicator-for-SDWebImage/UIImageView+UIActivityIndicatorForSDWebImage.h>
 
 @interface NZCircularImageView : UIImageView
 
@@ -39,6 +39,6 @@
 
 - (void)setImageWithResizeURL:(NSString *)stringUrl
   usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)activityStyle
-                    completed:(SDWebImageCompletedBlock)completedBlock;
+                    completed:(SDWebImageCompletionBlock)completedBlock;
 
 @end
